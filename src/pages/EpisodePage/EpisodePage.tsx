@@ -41,8 +41,6 @@ const EpisodePage: React.FC = () => {
       <div className={s.date}>
         Air Date: {currentEpisode?.air_date}
       </div>
-
-
     </div>
   );
 };
