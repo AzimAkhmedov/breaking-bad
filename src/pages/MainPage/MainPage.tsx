@@ -46,10 +46,6 @@ const MainPage: React.FC = () => {
     setFiltredEpisodes(episodes.filter((episodes) => episodes.season === season));
     console.log(filtredEpisodes);
   };
-  const setInitialEpisodes: any = () => {
-    setFiltredEpisodes(episodes);
-    console.log(filtredEpisodes);
-  }
 
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -84,9 +80,6 @@ const MainPage: React.FC = () => {
       >
         <Tab
           label='All Series'
-          onClick={() => {
-            setInitialEpisodes()
-          }}
 
           {...a11yProps(6)}
         />
@@ -130,7 +123,7 @@ const MainPage: React.FC = () => {
       <TabPanel value={currentTab} index={0}>
         <div className={s.episodes}>
           {
-            filtredEpisodes.map((e) => (
+            episodes.map((e) => (
               <NavLink key={e.episode_id} to={`/episodes/${e.episode_id}`}>
                 <Item > Episode {e.episode}  Season {e.season}
                   <p>
