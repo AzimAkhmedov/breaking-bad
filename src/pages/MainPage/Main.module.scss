@@ -9,14 +9,15 @@
   background-image: url(../../assets/image/pic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  .episodes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+  }
 }
 
 
-.grid {
-  a {
-    text-decoration: none;
-  }
-  p {
-    font-size: 18px;
-  }
-}
