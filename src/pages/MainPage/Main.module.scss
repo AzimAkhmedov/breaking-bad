@@ -6,9 +6,11 @@
   left: 0;
   top: 0;
 
-  background-image: url(../../assets/image/pic.jpg);
+  // background-image: url(../../assets/image/pic.jpg);
+  background: rgb(54, 51, 51);
   background-repeat: no-repeat;
   background-size: cover;
+
 
   .episodes{
     display: flex;
@@ -16,8 +18,17 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    width: 60%;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    padding-top: 10%;
     gap: 10px;
+      a{
+        text-decoration: none;
+      }
   }
 }
+
 
 

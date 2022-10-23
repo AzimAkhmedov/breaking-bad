@@ -57,8 +57,7 @@ const MainPage: React.FC = () => {
     padding: theme.spacing(2),
     textAlign: 'center',
     width: 140,
-    color: 'darkcyan',
-
+    color: 'darkblue',
   }));
 
 
